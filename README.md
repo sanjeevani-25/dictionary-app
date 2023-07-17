@@ -1,2 +1,2 @@
 # dictionary-app
-xxcc
+xx
