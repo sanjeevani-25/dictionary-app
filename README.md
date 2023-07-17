@@ -1,3 +1,1 @@
-# dictionary-app
-
-branch
+# Dictionary App
