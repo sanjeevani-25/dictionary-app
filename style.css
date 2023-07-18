@@ -17,6 +17,7 @@ body {
 .container {
     background: #ffffff;
     width: 90vmin;
+    max-height: 75vmin;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -24,7 +25,29 @@ body {
     padding: 70px 50px;
     border-radius: 12px;
     box-shadow: 0px 20px 40px rgba(38, 33, 61, 0.25);
+    overflow-y: scroll;
 }
+
+.container::-webkit-scrollbar {
+    width: 16px;
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: inset 0 0 1px grey;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #e0d9ff;
+    border-radius: 12px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #c2b4ff;
+}
+
 
 .search-box {
     width: 100%;
@@ -78,19 +101,28 @@ body {
         display: flex;
         gap: 12px;
         color: #b8a8fe;
-        margin: 2px 0px 28px 0px;
+        margin: 8px 0px 28px 0px;
         font-size: 14px;
+    }
+
+    >.def {
+        color: #575a7b;
+        font-size: 12px;
     }
 
     >.word-meaning {
         color: #575a7b;
+        font-size: 18px;
+
     }
 
     >.word-example {
         color: #575a7b;
+        font-size: 16px;
         font-style: italic;
         border-left: 4px solid #9780ff;
         padding-left: 20px;
-        margin-top: 20px;
+        margin-top: 16px;
+        margin-bottom: 38px;
     }
 }
