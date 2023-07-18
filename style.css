@@ -16,7 +16,7 @@ body {
 
 .container {
     background: #ffffff;
-    width: 90vmin;
+    width: 120vmin;
     max-height: 75vmin;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -71,7 +71,7 @@ body {
     }
 
     >#search-btn {
-        padding: 4px 8px;
+        padding: 10px 0px;
         width: 25%;
         background-color: #785aff;
         border: none;
@@ -98,7 +98,7 @@ body {
         >button {
             background: transparent;
             border: none;
-            color: #9780ff;
+            color: #785aff;
             outline: none;
             font-size: 20px;
         }
@@ -107,9 +107,10 @@ body {
     >.details {
         display: flex;
         gap: 12px;
-        color: #b8a8fe;
-        margin: 8px 0px 28px 0px;
+        color: #785aff;
+        margin: 4px 0px 28px 0px;
         font-size: 14px;
+        font-weight: 400;
     }
 
     >.def {
@@ -138,5 +139,6 @@ body {
     margin-top: 40px;
     font-size: 28px;
     text-align: center;
-    color: #3919c9;
+    font-weight: normal;
+    color: #383b60;
 }

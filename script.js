@@ -12,8 +12,9 @@ btn.addEventListener('click', () => {
         .then((response) => response.json())
         .then((data) => {
 
-            // console.log(data);
+            console.log(data);
             result.innerHTML = "";
+
 
             for (let index = 0; index < data[0].meanings.length; index++) {
 
@@ -52,11 +53,16 @@ btn.addEventListener('click', () => {
 
             const ph_len = data[0].phonetics.length;
             const ph = data[0].phonetics[ph_len - 1];
-            sound.setAttribute("src", `${ph.audio}`);
+            const ph2 = data[0].phonetics[0];
+
+            var soundAudio = ph2.audio == "" ? ph.audio : ph2.audio;
+            sound.setAttribute("src", `${soundAudio}`);
+            // console.log(data[0].phonetics[ph_len - 1] == "");
         })
         .catch(() => {
             result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
         });
+
 
 });
 
