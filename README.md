@@ -48,4 +48,3 @@ const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 ## Acknowledgements
 
 - [DictionaryAPI](https://dictionaryapi.dev/) - The API used to retrieve word definitions and related information.
-- [OpenAI](https://openai.com/) - The technology behind the ChatGPT model used to generate this README file.
