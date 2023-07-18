@@ -27,7 +27,7 @@ To run this dictionary app locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/dictionary-app.git
+   git clone https://github.com/sanjeevani-25/dictionary-app.git
    ```
 
 2. Navigate to the project directory:
