@@ -4,13 +4,16 @@ const result = document.getElementById("result");
 const sound = document.getElementById("sound");
 const btn = document.getElementById("search-btn");
 
+
+
 btn.addEventListener('click', () => {
     let input = document.getElementById("input-word").value;
     fetch(`${url}${input}`)
         .then((response) => response.json())
         .then((data) => {
 
-            console.log(data);
+            // console.log(data);
+            result.innerHTML = "";
 
             for (let index = 0; index < data[0].meanings.length; index++) {
 
@@ -50,8 +53,11 @@ btn.addEventListener('click', () => {
             const ph_len = data[0].phonetics.length;
             const ph = data[0].phonetics[ph_len - 1];
             sound.setAttribute("src", `${ph.audio}`);
-
+        })
+        .catch(() => {
+            result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
         });
+
 });
 
 function playSound() {
