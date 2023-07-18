@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:not(i) {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ae9cff;
+}
+
+.container {
+    background: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 70px 50px;
+    border-radius: 12px;
+    box-shadow: 0px 20px 40px rgba(38, 33, 61, 0.25);
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    >#input-word {
+        padding: 5px;
+        border: none;
+        width: 70%;
+        outline: none;
+        border-bottom: 3px solid #9780ff;
+        font-size: 16px;
+    }
+
+    >#search-btn {
+        padding: 4px 8px;
+        width: 25%;
+        background-color: #785aff;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        color: #ffffff;
+    }
+}
+
+.result {
+    position: relative;
+
+    >.word {
+        display: flex;
+        margin-top: 38px;
+        gap: 16px;
+
+        >h3 {
+            font-size: 30px;
+            color: #14006e;
+            font-weight: 300;
+        }
+
+        >button {
+            background: transparent;
+            border: none;
+            color: #9780ff;
+            outline: none;
+            font-size: 20px;
+        }
+    }
+
+    >.details {
+        display: flex;
+        gap: 12px;
+        color: #b8a8fe;
+        margin: 2px 0px 28px 0px;
+        font-size: 14px;
+    }
+
+    >.word-meaning {
+        color: #575a7b;
+    }
+
+    >.word-example {
+        color: #575a7b;
+        font-style: italic;
+        border-left: 4px solid #9780ff;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+}
